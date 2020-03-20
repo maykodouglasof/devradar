@@ -8,8 +8,6 @@ import './Main.css';
 
 import DevForm from './components/DevForm';
 import DevItem from './components/DevItem';
-import Chat from './components/Chat';
-
 
 function App() {
   const [devs, setDevs] = useState([]);
@@ -43,7 +41,6 @@ function App() {
             <DevItem key={dev._id} dev={dev} />
           ))}
         </ul>
-        <Chat />
       </main>
     </div>
   );
